@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 mongoose
-  .connect("mongodb+srv://nam:nam@cluster0.co1pb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {})
+  .connect()
   .then(() => {
     console.log("Connected to MongoDB");
   })
